@@ -1,0 +1,5 @@
+lxml==3.5.0
+meld==3.14.1
+pycurl==7.19.5.3
+pygobject==3.18.2
+wheel==0.26.0
