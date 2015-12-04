@@ -19,7 +19,7 @@ def main():
 
     print "Starting..."
 
-    result = {}
+    result = []
     for i in range(1,11):
         url = baseURL + str(i).zfill(2)
         pageContent = getHTML(url)
@@ -27,7 +27,11 @@ def main():
         words = tree.xpath('//table[@class="wordlist"]/tr/th/text()')
         definitions = tree.xpath('//table[@class="wordlist"]/tr/td/text()')
         for i in range(0,len(words)):
-            result[words[i]] = definitions[i]
+            item = {}
+            item['word'] = words[i]
+            item['definition'] = definitions[i]
+            item['type'] = ''
+            result.append(item)
         print "Data obtained from: " + url
     print "Writing to file..."
     f = open(filename,'w')
