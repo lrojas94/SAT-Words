@@ -15,7 +15,7 @@ def getHTML(url):
 
 def main():
     baseURL = 'http://www.majortests.com/sat/wordlist-'
-    filename = "words.json"
+    filename = "majortests_words.json"
 
     print "Starting..."
 
