@@ -4,7 +4,7 @@ $(function(){
         	$(elem).remove();
         }
     });
-		
+
     function strip(html)
     {
        var tmp = document.createElement("DIV");

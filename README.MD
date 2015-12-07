@@ -10,5 +10,6 @@ All Words are displayed in the following format:
     "definition": "To lower in position, estimation, or the like; degrade."
 }
 ```
-They may or may not include type depending on how the site has them.
-All words were extracted using the **html.html** file and the **script.js** script. Please note that the script requires JQuery in order to work.
+They may or may not include type depending on how the site present them.
+
+Words from **freevocabulary** were extracted using the script.js file, but first the HTML was cleaned out. The HTML wont be available in this repo since the site does not belong to me. You are free to look around and check how it was made.
