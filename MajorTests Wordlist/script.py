@@ -34,8 +34,9 @@ def main():
             result.append(item)
         print "Data obtained from: " + url
     print "Writing to file..."
+    output = {"results" : result}
     f = open(filename,'w')
-    f.write(json.dumps(result,sort_keys=True,indent=4, separators=(',', ': ')))
+    f.write(json.dumps(output,sort_keys=True,indent=4, separators=(',', ': ')))
     f.close()
     print "Done"
 
